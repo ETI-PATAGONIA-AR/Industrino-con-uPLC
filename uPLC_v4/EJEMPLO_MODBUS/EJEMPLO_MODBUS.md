@@ -8,21 +8,21 @@ Este ejemplo muestra cómo usar Modbus RS485 para crear un sistema de control de
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │  ARDUINO MASTER (ID=1)                                      │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │ • Lee temperatura del Slave cada 500ms               │   │
-│  │ • Controla salida de calefacción local (Q1)         │   │
-│  │ • Controla salida de enfriamiento remoto (Q2→Slave) │   │
-│  │ • Monitorea alarma remota (MB1)                     │   │
-│  └─────────────────────────────────────────────────────┘   │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │ • Lee temperatura del Slave cada 500ms              │    │
+│  │ • Controla salida de calefacción local (Q1)         │    │
+│  │ • Controla salida de enfriamiento remoto (Q2→Slave) │    │
+│  │ • Monitorea alarma remota (MB1)                     │    │
+│  └─────────────────────────────────────────────────────┘    │
 │                          RS485                              │
 │                           │                                 │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │ ARDUINO SLAVE (ID=2)                                │   │
-│  │ • Mide temperatura local con sensor analógico       │   │
-│  │ • Responde a solicitudes Modbus                     │   │
-│  │ • Controla ventilador de enfriamiento               │   │
-│  │ • Envía alarma si temperatura > 90°C                │   │
-│  └─────────────────────────────────────────────────────┘   │
+│  ┌─────────────────────────────────────────────────────┐    │
+│  │ ARDUINO SLAVE (ID=2)                                │    │
+│  │ • Mide temperatura local con sensor analógico       │    │
+│  │ • Responde a solicitudes Modbus                     │    │
+│  │ • Controla ventilador de enfriamiento               │    │
+│  │ • Envía alarma si temperatura > 90°C                │    │
+│  └─────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────┘
 ```
 
