@@ -1,10 +1,6 @@
-#==================================================================
-# uPLC_v3/CHANGELOG.md - ETI Patagonia - prof.martintorres@educ.ar
-#==================================================================
+# Registro de Cambios - uPLC v4
 
-# Registro de Cambios - uPLC v3
-
-## v3.1 - Modbus RS485 y Expansión de Salidas (2025-02-26)
+## v4.1 - Modbus RS485 y Expansión de Salidas (2025-02-26)
 
 ### ✨ Nuevas Características
 
@@ -145,15 +141,6 @@ Display LCD I2C:
 - Los registros Modbus son de 16 bits pero se mapean a 8 bits para compatibilidad
 - El timeout de Modbus puede causar delays en el loop() si el esclavo no responde
 
-### 🚀 Próximas Mejoras Sugeridas
-
-- [ ] Agregar modo Modbus Slave
-- [ ] Soportar más funciones Modbus (04, 05, 15, 16)
-- [ ] Crear iconos específicos para bloques Modbus
-- [ ] Agregar configuración de baudrate en la interfaz
-- [ ] Implementar timeout configurable
-- [ ] Agregar soporte para múltiples esclavos en un solo rung
-
 ---
 
 ## v3.0 - Primera Versión Estable (2025-02-25)
@@ -170,31 +157,6 @@ Display LCD I2C:
    - Dirección I2C: 0x27
    - Visualización de entradas, salidas y analógicos
    - Duty cycle del PWM
-
-### 📦 Estructura del Proyecto
-```
-uPLC_v3/
-  ├── config/
-  │   ├── constants.py
-  │   └── pins.py
-  ├── core/
-  │   └── model.py
-  ├── generator/
-  │   └── sketch_builder.py
-  ├── gui/
-  │   ├── canvas.py
-  │   ├── main_window.py
-  │   ├── sketch_dialog.py
-  │   └── toolbox.py
-  ├── project/
-  │   └── project_io.py
-  ├── assets/
-  │   └── icons/
-  ├── ejemplos/
-  ├── main.py
-  ├── requirements.txt
-  └── run_uPLCv3.bat
-```
 
 ---
 
