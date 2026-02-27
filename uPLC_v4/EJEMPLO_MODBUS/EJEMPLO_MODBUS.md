@@ -1,7 +1,3 @@
-#==================================================================
-# uPLC_v3/EJEMPLO_MODBUS.md - ETI Patagonia - prof.martintorres@educ.ar
-#==================================================================
-
 # Ejemplo Completo: Sistema de Control de Temperatura Distribuido
 
 Este ejemplo muestra cómo usar Modbus RS485 para crear un sistema de control de temperatura distribuido con dos Arduino NANO.
