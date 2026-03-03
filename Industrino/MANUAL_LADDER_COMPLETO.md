@@ -1,15 +1,9 @@
 <img width="1024" height="1536" alt="PORTADA_uPLC_2" src="https://github.com/user-attachments/assets/a5245d4d-c2d7-447d-8f5d-fe7c6cc486db" />
 
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║     MANUAL COMPLETO DE PROGRAMACIÓN LADDER                       ║
-║     "Aprendé a programar sin saber programar"                    ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
+# MANUAL COMPLETO DE PROGRAMACIÓN LADDER                    
+## "Aprendé a programar sin saber programar"                   
 
-═══════════════════════════════════════════════════════════════════
-ÍNDICE
-═══════════════════════════════════════════════════════════════════
+### ÍNDICE
 
 PARTE 1 - CONCEPTOS BÁSICOS (páginas 1-20)
   1.1 ¿Qué es un PLC y para qué sirve?
@@ -43,13 +37,9 @@ PARTE 5 - TIPS Y TRUCOS (páginas 91-100)
   5.2 Buenas prácticas de programación
   5.3 Cómo testear tu programa
 
-═══════════════════════════════════════════════════════════════════
-PARTE 1 - CONCEPTOS BÁSICOS
-═══════════════════════════════════════════════════════════════════
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1.1 ¿QUÉ ES UN PLC Y PARA QUÉ SIRVE?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## PARTE 1 - CONCEPTOS BÁSICOS
+### 1.1 ¿QUÉ ES UN PLC Y PARA QUÉ SIRVE?
 
 Imaginate que querés automatizar algo en tu casa o fábrica. Por ejemplo:
 
@@ -82,6 +72,7 @@ Con un PLC (Controlador Lógico Programable):
 NUESTRO PLC:
 Es un Arduino NANO (el cerebro) + uPLC v4 (el software para programarlo)
 
+```text
 ┌─────────────────────────────────────────────────────────┐
 │                    ARDUINO NANO                         │
 │                   (El "cerebro")                        │
@@ -92,22 +83,21 @@ Es un Arduino NANO (el cerebro) + uPLC v4 (el software para programarlo)
 │  I3 (sensor)───────┤     ├───────────── Q3 (alarma)    │
 │                    └─────┘                              │
 └─────────────────────────────────────────────────────────┘
-
+```
 ANALOGÍA:
 Un PLC es como tu cerebro:
   • Las ENTRADAS son tus sentidos (vista, oído, tacto)
   • Las SALIDAS son tus acciones (caminar, hablar)
   • El PROGRAMA es tu conocimiento (si hace frío → ponete un abrigo)
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1.2 ¿QUÉ ES UN DIAGRAMA LADDER?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+### 1.2 ¿QUÉ ES UN DIAGRAMA LADDER?
 
 "Ladder" significa "escalera" en inglés. Se llama así porque parece
 una escalera de lado.
 
 EJEMPLO SIMPLE: "Si presiono el botón, se enciende la luz"
-
+```
 ┌────────────────────────────────────────────────────────┐
 │ ║                                                   ║   │
 │ ║   [BOTÓN]────────────────────────────(LUZ)       ║   │
@@ -117,8 +107,9 @@ EJEMPLO SIMPLE: "Si presiono el botón, se enciende la luz"
 Carril                                            Carril
 izquierdo                                        derecho
 (corriente)                                    (corriente)
+```
 
-¿CÓMO SE LEE?
+### ¿CÓMO SE LEE?
 De IZQUIERDA a DERECHA, como leer un libro.
 
 1. La corriente sale del carril izquierdo (║)
@@ -127,19 +118,17 @@ De IZQUIERDA a DERECHA, como leer un libro.
 4. La luz se enciende
 5. La corriente vuelve al carril derecho (║)
 
-ANALOGÍA DEL RÍO:
+### ANALOGÍA DEL RÍO:
 Imagina que la corriente es agua que fluye:
   • Los carriles son las orillas del río
   • El botón es una compuerta
   • La luz es una rueda de molino
   • Si abro la compuerta → el agua hace girar la rueda
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1.3 ELEMENTOS BÁSICOS DEL LADDER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+### 1.3 ELEMENTOS BÁSICOS DEL LADDER
 
 En programación ladder tenemos SOLO DOS TIPOS de elementos:
-
+```
 ┌─────────────────────────────────────────────────────────────┐
 │  1. CONDICIONES (van a la IZQUIERDA)                        │
 │     → Preguntas / Sensores / Interruptores                  │
@@ -159,13 +148,16 @@ ACCIÓN (Respuesta):
   "Entonces llevá paraguas"
 
 EN LADDER:
+
+```
 ┌─────────────────────────────────────────────────────────┐
 │ ║  [¿Está lloviendo?]──────────(Llevar paraguas)    ║  │
 └─────────────────────────────────────────────────────────┘
+```
 
-TIPOS DE CONDICIONES:
+## TIPOS DE CONDICIONES:
 
-1. CONTACTO NORMALMENTE ABIERTO (NO o NA)
+### 1. CONTACTO NORMALMENTE ABIERTO (NO o NA)
    Símbolo: ─┤ ├─  (dos líneas paralelas)
    
    Significa: "Si está ACTIVADO, deja pasar"
