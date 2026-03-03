@@ -1,7 +1,5 @@
-#==================================================================
-# GUÍA COMPLETA DE MODBUS RS485 - uPLC v4
-# ETI Patagonia - prof.martintorres@educ.ar
-#==================================================================
+
+<img width="1024" height="1536" alt="PORTADA_uPLC_2" src="https://github.com/user-attachments/assets/b1a70cf9-5f23-4b81-83ef-e940e7e7e409" />
 
 # Guía de Uso de Modbus RS485 en uPLC v4
 
