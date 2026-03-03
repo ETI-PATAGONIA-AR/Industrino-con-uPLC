@@ -81,8 +81,6 @@ Línea 3:  X X X X X X X
 ```
 Donde X = 0 o 1 (estado digital), PWM = 00-99% (duty cycle)
 
-<img width="1024" height="1536" alt="PORTADA_uPLC_2" src="https://github.com/user-attachments/assets/78f7095e-adbc-41ea-992a-87022e382025" />
-
 ## Soporte Técnico
 
 ETI Patagonia - prof.martintorres@educ.ar
