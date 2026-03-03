@@ -1,6 +1,6 @@
 # uPLC - Conversor Ladder a Arduino
 
-<img width="626" height="511" alt="IndustrINO_uPLCv4" src="https://github.com/user-attachments/assets/497bd976-d728-4444-b14b-db134e2aeea2" />
+<img width="1024" height="1536" alt="PORTADA_uPLC_2" src="https://github.com/user-attachments/assets/78f7095e-adbc-41ea-992a-87022e382025" />
 
 uPLC es una herramienta de ingeniería desarrollada por ETI Patagonia diseñada para cerrar la brecha entre la programación 
 industrial y la electrónica embebida. Esta aplicación permite a usuarios y estudiantes diseñar sistemas de control mediante 
@@ -16,6 +16,7 @@ permitiendo que un diseño visual se transforme en un proyecto de firmware compl
 
 <img width="1366" height="720" alt="Ctl_VENTILACION_SIMU" src="https://github.com/user-attachments/assets/27719060-fc7e-43a2-91ae-bb8316cdf97d" />
 
+<img width="626" height="511" alt="IndustrINO_uPLCv4" src="https://github.com/user-attachments/assets/497bd976-d728-4444-b14b-db134e2aeea2" />
 
 ## 🆕 Novedades en la version v4.1: Se suman Modbus RS485 - Q6 
 
