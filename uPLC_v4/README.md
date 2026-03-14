@@ -210,6 +210,11 @@ Rung 2: Si recibe alarma (MB1==1), activar sirena local
 [MB_SLAVE:MB1=1] ───> [COIL:Q2]
 ```
 
+### Diseño del HARDWARE:
+
+[![Demo en YouTube](https://img.shields.io/badge/▶_Ver_Diseño_Hardware-YouTube-red)](https://www.youtube.com/watch?v=sfueLWmS17k)
+
+
 **📖 Ver [MODBUS_GUIDE.md](MODBUS_GUIDE.md) para documentación completa**
 
 ## Soporte Técnico
